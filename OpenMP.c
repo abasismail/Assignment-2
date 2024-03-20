@@ -65,9 +65,8 @@ int main(int argc, char *argv[]) {
     //local buckets, n_buckets for each thread
     buckets = (struct bucket *) calloc(n_buckets*num_threads, sizeof(struct bucket));
 
-// ****************************
 // Starting the main algorithm
-// ****************************
+
 
     t1 = omp_get_wtime();
 #pragma omp parallel
